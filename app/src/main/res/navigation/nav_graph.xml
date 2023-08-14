@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sign_in">
+    <fragment
+        android:id="@+id/sign_in"
+        android:name="com.example.sumup.sign_in"
+        android:label="sign_in"
+        tools:layout="@layout/sign_in" >
+        <action
+            android:id="@+id/action_sign_in_to_register3"
+            app:destination="@id/register3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_sign_in_to_home32"
+            app:destination="@id/home3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/register3"
+        android:name="com.example.sumup.register"
+        android:label="register"
+        tools:layout="@layout/register" >
+        <action
+            android:id="@+id/action_register3_to_sign_in"
+            app:destination="@id/sign_in"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/home3"
+        android:name="com.example.sumup.home"
+        android:label="home"
+        tools:layout="@layout/home" >
+        <action
+            android:id="@+id/action_home3_to_stats2"
+            app:destination="@id/stats2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_home3_to_notifications2"
+            app:destination="@id/notifications2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_home3_to_myprofile2"
+            app:destination="@id/myprofile2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_home3_to_setting2"
+            app:destination="@id/setting2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/myprofile2"
+        android:name="com.example.sumup.myprofile"
+        android:label="myprofile"
+        tools:layout="@layout/myprofile" >
+        <action
+            android:id="@+id/action_myprofile2_to_setting2"
+            app:destination="@id/setting2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_myprofile2_to_notifications2"
+            app:destination="@id/notifications2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_myprofile2_to_home3"
+            app:destination="@id/home3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_myprofile2_to_stats2"
+            app:destination="@id/stats2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_myprofile2_to_setnotif"
+            app:destination="@id/setnotif" />
+    </fragment>
+    <fragment
+        android:id="@+id/stats2"
+        android:name="com.example.sumup.stats"
+        android:label="stats"
+        tools:layout="@layout/stats" >
+        <action
+            android:id="@+id/action_stats2_to_setting2"
+            app:destination="@id/setting2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/overshoot_interpolator"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_stats2_to_home3"
+            app:destination="@id/home3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_stats2_to_notifications2"
+            app:destination="@id/notifications2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_stats2_to_myprofile2"
+            app:destination="@id/myprofile2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifications2"
+        android:name="com.example.sumup.notifications"
+        android:label="notifications"
+        tools:layout="@layout/notifications" >
+        <action
+            android:id="@+id/action_notifications2_to_setting2"
+            app:destination="@id/setting2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_notifications2_to_stats2"
+            app:destination="@id/stats2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_notifications2_to_home3"
+            app:destination="@id/home3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_notifications2_to_myprofile2"
+            app:destination="@id/myprofile2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting2"
+        android:name="com.example.sumup.setting"
+        android:label="settings"
+        tools:layout="@layout/settings" >
+        <action
+            android:id="@+id/action_setting2_to_notifications2"
+            app:destination="@id/notifications2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_setting2_to_myprofile2"
+            app:destination="@id/myprofile2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_setting2_to_stats2"
+            app:destination="@id/stats2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_setting2_to_home3"
+            app:destination="@id/home3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/setnotif"
+        android:name="com.example.sumup.setnotif"
+        android:label="setnotif"
+        tools:layout="@layout/setnotif" >
+        <action
+            android:id="@+id/action_setnotif_to_home3"
+            app:destination="@id/home3" />
+    </fragment>
+</navigation>
