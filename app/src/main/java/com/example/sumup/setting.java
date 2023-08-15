@@ -14,7 +14,7 @@ import com.example.sumup.databinding.SettingsBinding;
 
 public class setting extends Fragment {
     private SettingsBinding binding;
-
+// i am the best comment
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
