@@ -1,51 +1,12 @@
-# Secure LogIn and SignUp API in PHP
-[![Vishnu Sivadas](https://www.vishnusivadas.com/github/codequality.svg?style=flat)](https://github.com/VishnuSivadasVS)
+Sum_up was the first group project app i did in unversity, i had had some previous expereince beforehand with the more personal projects i had done( running app, and my websites) but this would be the first introduction to both proper documentation of a commercial app as well as working as a team. i was lead programmer, overall my previous work with android studio helped tremendously when starting work on sum_up. UI and the like turned out much better than my first iterations, i got to create a much better system of user login than before by getting to grips with PHPmyadmin, as well as using more advanced calculation than before thanks to my previous work before as well as managing a database and all the issues that come with that.
 
-A secure PHP API to manage login and signup operations. This API protects from attacks like SQL injunction and XSS. Making development work easier for developers.
+in regards to documentation. i got to understand how different a real world app is than some app you create for fun/improvemement as well as a glimpse into how developers and teams work together and i am very happy with what our team managed to create 
 
-## How to use?
-First of all download the files DataBase.php and DataBaseConfig.php. Place it in your project folder. Go to the DataBaseConfig.php file and change the details to your database details.Now add the file DataBase.php to your project file by requiring it.
-```
-require "DataBase.php";
-```
-Simply create an object for the class DataBase.
-```
-$db = new DataBase();
-```
-Call the dbConnect() and it will return a boolean value which shows whether the database connection is success of not. 
-```
-$db->dbConnect();
-```
-Inside the current file check the condition for database connection. If it is true proceed with the rest. Check this sample code.
-```
-require "DataBase.php";
-$db = new DataBase();
-if ($db->dbConnect()) {
-    //Database connection is success.
-}
-else{
-    //Database connection is failed.
-}
-```
-Now that the connection is success you can call the login and the signup functions. Use the object of the class DataBase and call the functions.
-
-### Calling Login Function
-Call the logIn() with the object and pass the tablename, username and password as its arguments.
-```
-$db->logIn($tablename, $username, $password);
-```
-
-### Calling Signup Function
-Call the signUp() with the object and pass tablename, fullname, username, password and email as its arguments. You can also chnage the number of arguments as you want, but you will have to change signUp() in the DataBase class accordingly.
-
-```
-$db->signUp($tablename, $fullname, $username, $password, $email);
-```
-
-Feel free to report any issues related to this.
 
 ## Authors
+Saishen Pillay( team lead)
+Jurrien Westvig (lead programmer)
+Toni Govender ( documentation lead)
+Victor Pavaree ( Junior documentation)
 
-* **Vishnu Sivadas** - *Developer* - [Website](https://www.vishnusivadas.com/)
 
-Check out my other works [@VishnuSivadasVS](https://github.com/VishnuSivadasVS)
