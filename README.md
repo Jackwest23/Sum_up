@@ -4,7 +4,7 @@ in regards to documentation. i got to understand how different a real world app 
 
 
 ## Authors
-Saishen Pillay( team lead) 
+Saishen Pillay( team lead) https://github.com/SaishenP
 Jurrien Westvig (lead programmer)
 Toni Govender ( documentation lead) https://github.com/TonishaGovender
 Victor Pavaree ( Junior documentation)
